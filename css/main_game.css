@@ -1,0 +1,149 @@
+.game-main-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 52px;
+    margin-top: 66px;
+}
+
+.game-main-scene-section {
+    height: 100vh;
+    background: linear-gradient(129.45deg, #ABD2D4 13.37%, #D0FAFD 84.55%) no-repeat center;
+    background-size: cover;
+}
+
+.game-main-scene-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-on-scene {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px; 
+}
+
+.score-on-scene-text {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.current-score-on-scene-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 113px;
+}
+
+.current-score-on-scene-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 46px;
+}
+
+.timer {
+    width: 249px;
+    height: 80px;
+
+    background: #ABD2D4;
+    border-radius: 50px;
+
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 13px;
+    margin-top: 34px;
+}
+
+.pause {
+    width: 249px;
+    height: 80px;
+
+    background: #ABD2D4;
+    border-radius: 50px;
+
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 13px;
+    margin-top: 34px;
+    margin-right: 275px;
+}
+
+.pause-and-timer {
+    display: flex;
+}
+
+.smaller {
+    transform: rotate(-180deg);
+    margin-top: 50px;
+}
+
+.bigger {
+    margin-top: 50px;
+}
+
+.mange-game {
+    display: flex;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .game-main-header-text {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+
+        width: 196px;
+        height: 24px;  
+    }
+
+    .current-score-on-scene-top {
+        width: 122px;
+        height: 102px;
+    }
+
+    .score-on-scene {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .score-on-scene-text {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .pause-and-timer {
+        flex-direction: column;
+    }
+
+    .pause {
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+    .main-game-scene-ref {
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .smaller {
+        margin-top: 0px;
+    }
+
+    .bigger {
+        margin-top: 0px;
+    }
+}
