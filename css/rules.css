@@ -1,0 +1,118 @@
+.main__menu-back__button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    padding-top: 28px;
+    background: linear-gradient(143.09deg, #BE94F3 8.21%, #FFFFFF 113.46%);
+}
+
+.rules-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.rules-header-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 52px;
+    margin-top: 66px;
+}
+
+.logo-pic {
+    margin-left: 372px;
+}
+
+.rules-section {
+    height: 100%;
+    background: linear-gradient(129.45deg, #ABD2D4 13.37%, #D0FAFD 84.55%) no-repeat center;
+    background-size: cover;
+    padding: 198px;
+}
+
+.rules-subtitels {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 49px;
+}
+
+.rules__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rules__item {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 32px;
+}
+
+.rules-pic {
+    margin-right: 33px;
+}
+
+.rules-pic-text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    max-width: 526px;
+    max-height: 120px;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    
+    .logo-pic {
+        width: 152px;
+        height: 46px;
+        margin-left: 57px;
+    }
+
+    .main__menu-back__button {
+        width: 46px;
+        height: 46px;
+        padding-top: 14px;
+        margin-left: 30px;
+    }
+
+    .arrow__pic {
+        width: 24px;
+    }
+
+    .rules-subtitels {
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 18px;
+        max-width: 300px;
+    }
+
+    .rules-section {
+        padding: 0px;
+    }
+
+    .rules-list {
+        max-width: 400px;
+    }
+
+    .rules-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 255px;
+    }
+
+    .rules-pic-text {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .rules-pic {
+        max-width: 60px;
+    }
+}

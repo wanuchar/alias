@@ -1,0 +1,133 @@
+.game-header-text {
+    width: 316px;
+    height: 125px;
+
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 59px;
+
+    margin-left: 255px;
+}
+
+.game-main {
+    height: 100%;
+}
+
+.game-section {
+    height: 100%;
+    background: linear-gradient(129.45deg, #ABD2D4 13.37%, #D0FAFD 84.55%) no-repeat center;
+    background-size: cover;
+}
+
+.win-score-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.win-score-text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.game_wrapper {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.command-name-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 277px;
+}
+
+.command-name-line {
+    display: flex;
+    width: 500px;
+    height: 34px;
+    justify-content: space-between;
+}
+
+.command-name-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.command-name-score {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+.main-game-scene-ref {
+    display: flex;
+    width: 312px;
+    height: 312px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(141.43deg, #BE94F3 16.07%, #FFFFFF 91.04%);
+
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 59px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 127px;
+    margin-top: 55px;
+    margin-left: 67px;
+    margin-right: 67px;
+}
+
+.current-command-name {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 62px;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    
+    .game-header-text {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 39px;
+
+        max-width: 158px;
+        max-height: 76px;
+        margin-left: 60px;
+    }
+
+    .win-score-pic {
+        width: 40px;
+    }
+
+    .win-score-text {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .current-command-name {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .command-name-line {
+        width: 250px;
+        height: 17px;
+
+        margin-bottom: 8px;
+    }
+}
