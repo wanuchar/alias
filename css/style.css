@@ -54,6 +54,7 @@
   }
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -66,6 +67,7 @@ body {
     line-height: 1.2;
     font-weight: normal;
     color: black;
+    height: 100%;
 }
 
 
@@ -117,6 +119,10 @@ body {
     font-weight: 600;
 }
 
+.main {
+    height: 100%;
+}
+
 
 /* Main styles */
 .main__content__wrapper {
@@ -124,10 +130,10 @@ body {
 }
 
 .intro {
-    height: 100vh;
     background: linear-gradient(129.45deg, #ABD2D4 13.37%, #D0FAFD 84.55%) no-repeat center;
     background-size: cover;
     padding-top: 333px;
+    height: 100%;
 }
 
 .intro__wrapper {

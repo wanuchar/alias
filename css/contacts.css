@@ -1,10 +1,14 @@
+.contacts-main {
+    height: 100%;
+}
+
 .contacts-section {
     padding-top: 271px;
     display: flex;
     justify-content: center;
     background: linear-gradient(129.45deg, #ABD2D4 13.37%, #D0FAFD 84.55%) no-repeat center;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
 .contacts-wrapper {

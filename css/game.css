@@ -1,6 +1,6 @@
 .game-header-text {
-    width: 315.86px;
-    height: 124.98px;
+    width: 316px;
+    height: 125px;
 
     font-weight: 900;
     font-size: 48px;
@@ -9,8 +9,12 @@
     margin-left: 255px;
 }
 
+.game-main {
+    height: 100%;
+}
+
 .game-section {
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(129.45deg, #ABD2D4 13.37%, #D0FAFD 84.55%) no-repeat center;
     background-size: cover;
 }
