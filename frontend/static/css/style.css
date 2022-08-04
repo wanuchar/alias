@@ -60,6 +60,10 @@ html {
     box-sizing: inherit;
 }
 
+#app {
+    height: 100%;
+}
+
 body {
     font-family: 'Montserrat';
     font-style: normal;
@@ -67,10 +71,6 @@ body {
     line-height: 1.2;
     font-weight: normal;
     color: black;
-    height: 100%;
-}
-
-#app {
     height: 100%;
 }
 
@@ -98,13 +98,18 @@ body {
     padding-top: 56px;
 }
 
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
 .header__list {
     display: flex;
     flex-wrap: wrap;   
 }
 
 .header__item {
-    margin-right: 80px;
+    margin-right: 60px;
 }
 
 .header__item:last-child {
@@ -121,6 +126,16 @@ body {
 
 .header__link:hover, .header__link:focus, .header__link:active {
     font-weight: 600;
+}
+
+.sign-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign_item {
+    margin-left: 60px;
+    margin-bottom: 5px;
 }
 
 .main {
@@ -214,7 +229,7 @@ body {
     }
 
     .header__item {
-        margin-right: 12px;
+        margin-right: 8px;
     }
 
     .main__content__wrapper {
@@ -257,5 +272,4 @@ body {
         margin-top: 118px;
     }
 
-    
 }

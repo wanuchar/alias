@@ -6,6 +6,12 @@
     margin-top: 66px;
 }
 
+.game-main-header-text {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+}
+
 .game-main-scene {
     height: 100%;
 }

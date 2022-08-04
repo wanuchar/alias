@@ -8,7 +8,7 @@ export default class extends AbstractView {
 
     async getHttml() {
         return `
-                <header class="header">
+            <header class="header">
                 <div class="wrapper">
                     <div class="header__wrapper">
                         <div class="header__logo">
@@ -29,6 +29,8 @@ export default class extends AbstractView {
                                     <a href="/contact" class="header__link" data-link>Контакты</a>
                                 </li>
                             </ul>
+                            <div id="sign_menu_id" class="sign-menu">
+                            </div>
                         </nav>
                     </div>
                 </div>

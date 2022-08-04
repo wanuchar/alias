@@ -42,14 +42,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    overflow: scroll;
+    max-width: 500px;
+    max-height: 75px;
     margin-top: 277px;
 }
 
 .command-name-line {
     display: flex;
-    width: 500px;
-    height: 34px;
+    min-width: 500px;
+    min-height: 34px;
     justify-content: space-between;
 }
 

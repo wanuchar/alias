@@ -6,12 +6,37 @@ export default class extends AbstractView {
         this.setTitle("Game");
     }
 
+    async addHandler() {
+        let gameSett = JSON.parse(localStorage.getItem("gameSett"));
+
+        document.getElementById('win_score').value = gameSett.wordCount;
+        let commandArray = gameSett.commands;
+        for(var i = 0; i < commandArray.length; i++) {
+            let tableLine = `<tr class="command-name-line">
+                                <td class="command-name-cell">
+                                    <output id="command-name-` + i +`" class="command-name-text">` +
+                                        commandArray[i].name
+                                    + `</output>
+                                </td>
+                                <td class="command-name-cell">
+                                    <output id="command-score-` + i + `" class="command-name-score">` +
+                                        commandArray[i].score
+                                    + `</output>
+                                </td>
+                            </tr>`;
+            document.getElementById('table_id').insertAdjacentHTML('beforeend', tableLine);
+        }
+
+        document.getElementById('current_command_name').value = commandArray[gameSett.commandIndex].name;
+        
+    }
+
     async getHttml() {
         return `
             <header class="game-header">
                 <div class="wrapper">
                     <div class="rules-header-wrapper">
-                        <a href="/start_game_2" class="main__menu-back__button">
+                        <a href="/start_game_2" class="main__menu-back__button" data-link>
                             <img src="static/img/svg/arrow.svg" alt="arrow" class="arrow__pic">
                         </a>
                         <h1 class="game-header-text">
@@ -19,9 +44,9 @@ export default class extends AbstractView {
                         </h1>
                         <div class="win-score-wrapper">
                             <img src="static/img/svg/crown.svg" alt="crown-pic" class="win-score-pic">
-                            <p class="win-score-text">
+                            <output id="win_score" class="win-score-text">
                                 60
-                            </p>
+                            </output>
                         </div>
                         
                     </div>
@@ -32,38 +57,15 @@ export default class extends AbstractView {
                 <section class="game-section">        
                     <div class="game_wrapper">
                         
-                        <table class="command-name-table">
-                            <tr class="command-name-line">
-                                <td class="command-name-cell">
-                                    <p class="command-name-text">
-                                        Команда 1
-                                    </p>
-                                </td>
-                                <td class="command-name-cell">
-                                    <p class="command-name-score">
-                                        0
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr class="command-name-line">
-                                <td class="command-name-cell">
-                                    <p class="command-name-text">
-                                        Команда 2
-                                    </p>
-                                </td>
-                                <td class="command-name-cell">
-                                    <p class="command-name-score">
-                                        0
-                                    </p>
-                                </td>
-                            </tr>
+                        <table id="table_id" class="command-name-table">
+                            
                         </table>
                         
-                        <a href="/main_game" class="main-game-scene-ref">Поехали</a>
+                        <a href="/main_game" class="main-game-scene-ref" data-link>Поехали</a>
                         
-                        <h2 class="current-command-name">
+                        <output id="current_command_name" class="current-command-name">
                             ИМЯ КОМАНДЫ
-                        </h2>
+                        </output>
                     </div>
                 </section>
             </main>

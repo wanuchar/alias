@@ -7,6 +7,8 @@ export default class {
         document.title = title;
     }
 
+    async addHandler() {}
+
     async getHttml() {
         return "";
     }
