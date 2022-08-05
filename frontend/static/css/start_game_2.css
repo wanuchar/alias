@@ -1,0 +1,256 @@
+.start_game_2-header {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    margin-left: 400px;
+}
+
+.start_game_2-main {
+    height: 100%;
+}
+
+.start_game_2-section {
+    height: 100%;
+    background: linear-gradient(129.45deg, #ABD2D4 13.37%, #D0FAFD 84.55%) no-repeat center;
+    background-size: cover;
+    padding: 180px;
+}
+
+.start_game_2-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.start_game_2-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.words {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.choose_num_words_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.choose_time_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.time_of_round {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.number_of_words {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.choose_num_time {
+    display: flex;
+    flex-direction: column;
+    max-width: 570px;
+    max-height: 209px;
+
+    margin-bottom: 75px;
+}
+
+.choose_number_words {
+    margin-bottom: 40px;
+}
+
+.choose_num_words-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.choose_num_words-subtext {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 21px;
+}
+
+.choose_level-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 85px;
+}
+
+.choose_level {
+    display: flex;
+    max-width: 1292px;
+    /* max-height: 237px; */
+}
+
+.choose_level-subtext {
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 28px;
+}
+
+.level_1 {
+    width: 180px;
+    height: 180px;
+
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #C2E1BA 100%);
+    border-radius: 30px;
+    border: none;
+}
+
+.active, .level_1:hover, .level_2:hover, .level_3:hover, .level_4:hover, .level_5:hover {
+    box-shadow: 0px 4px 15px #1F3918;
+}
+
+.level_2 {
+    width: 180px;
+    height: 180px;
+    
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F1D5B4 100%);
+    border-radius: 30px;
+    border: none;
+}
+
+.level_3 {
+    width: 180px;
+    height: 180px;
+    
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F4A5A5 100%);
+    border-radius: 30px;
+    border: none;
+}
+
+.level_4 {
+    width: 180px;
+    height: 180px;
+    
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #CDADF6 100%);
+    border-radius: 30px;
+    border: none;
+}
+
+.level_5 {
+    width: 180px;
+    height: 180px;
+    
+    background: linear-gradient(223.19deg, #FFFFFF 0%, #C2E1BA 35.38%, #F1D5B4 55.6%, #F4A5A5 69.75%, #BE94F3 84.91%);
+    border-radius: 30px;
+    border: none;
+}
+
+.next__game {
+    filter: drop-shadow(0px 4px 10px #CDADF6);
+    width: 235px;
+    height: 58px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 15px;
+
+    background: linear-gradient(97.35deg, #BE94F3 44.1%, #FFFFFF 108.39%);
+    border-radius: 50px;
+    margin-top: 80px;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .start_game_2-header {
+        margin-left: 55px;
+    }
+
+    .start_game_2-section {
+        padding: 0px;
+        padding-top: 180px;
+    }
+
+    .choose_num_time {
+        max-width: 360px;
+        max-height: 132px;
+    }
+
+    .choose_num_words-text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .choose_num_words-subtext {
+        font-weight: 200;
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .choose_level {
+        max-width: 305px;
+        max-height: 195px;
+
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 40px;
+    }
+
+    .choose_level-wrapper {
+        margin-right: 40px;
+        margin-bottom: 30px;
+    }
+
+    .choose_level-subtext {
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .level_1 {
+        width: 56px;
+        height: 56px;
+    }
+
+    .level_2 {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .level_3 {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .level_4 {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .level_5 {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .choose_number_words {
+        margin-bottom: 25px;
+    }
+
+    .next__game {
+        margin-top: 200px;
+    }
+}

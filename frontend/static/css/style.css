@@ -1,0 +1,275 @@
+/* montserrat-500 - latin_cyrillic-ext_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/montserrat-v24-latin_cyrillic-ext_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v24-latin_cyrillic-ext_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-regular - latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v24-latin_cyrillic-ext_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v24-latin_cyrillic-ext_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-600 - latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/montserrat-v24-latin_cyrillic-ext_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v24-latin_cyrillic-ext_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/montserrat-v24-latin_cyrillic-ext_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v24-latin_cyrillic-ext_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-800 - latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/montserrat-v24-latin_cyrillic-ext_cyrillic-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v24-latin_cyrillic-ext_cyrillic-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-900 - latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/montserrat-v24-latin_cyrillic-ext_cyrillic-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v24-latin_cyrillic-ext_cyrillic-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+#app {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+    height: 100%;
+}
+
+
+/* Header styles */
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 56px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.header__item {
+    margin-right: 60px;
+}
+
+.header__item:last-child {
+    margin-right: 0px;
+}
+
+.header__link {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: black;
+    text-decoration: none;
+}
+
+.header__link:hover, .header__link:focus, .header__link:active {
+    font-weight: 600;
+}
+
+.sign-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign_item {
+    margin-left: 60px;
+    margin-bottom: 5px;
+}
+
+.main {
+    height: 100%;
+}
+
+
+/* Main styles */
+.main__content__wrapper {
+    display: flex;
+}
+
+.intro {
+    background: linear-gradient(129.45deg, #ABD2D4 13.37%, #D0FAFD 84.55%) no-repeat center;
+    background-size: cover;
+    padding-top: 333px;
+    height: 100%;
+}
+
+.intro__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 444px;
+    margin-right: 45px;
+}
+
+.intro__title {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    max-width: 444px;
+    margin-bottom: 40px;
+}
+
+.intro__subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    max-width: 394px;
+    margin-bottom: 50px;
+    align-self: flex-start;
+}
+
+.start__button-ref {
+    height: 58px;
+    width: 235px;
+    border-radius: 50px;
+
+    background: linear-gradient(97.35deg, #BE94F3 44.1%, #FFFFFF 108.39%);
+
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+    text-decoration: none;
+    text-align: center;
+
+    padding-top: 16px;
+}
+
+.cards__pic {
+    display: flex;
+}
+
+.start__button-ref:hover, .start__button-reffocus, .start__button-ref:active {
+    opacity: 0.7;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .main__content__wrapper {
+        flex-direction: column;
+    }
+
+    .header__logo-pic {
+        width: 149px;
+        height: 46px;
+    }
+
+    .header__link {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .header__wrapper {
+        justify-content: space-around;
+    }
+
+    .header__item {
+        margin-right: 8px;
+    }
+
+    .main__content__wrapper {
+        align-items: center;
+    }
+
+    .intro {
+        padding-top: 173px;
+    }
+
+    .intro__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 264px;
+        margin-left: 65px;
+        margin-top: 40px;
+    }
+
+    .intro__title {
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 29px;
+        max-width: 264px;
+        max-height: 56px;
+    }
+
+    .intro__subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 29px;
+        max-width: 264px;
+        margin-bottom: 50px;
+        align-self: flex-start;
+    }
+
+    .cards__pic {
+        width: 384px;
+        height: 254px;
+        margin-top: 118px;
+    }
+
+}
